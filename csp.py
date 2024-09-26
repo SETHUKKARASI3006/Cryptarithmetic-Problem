@@ -7,14 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1wd7FttMM-oR-QiYPm2ZWZ3MwKMMfNFPe
 """
 
-from itertools import permutations
+from itertools import permutations 
 
 def solve_cryptarithmetic():
     for perm in permutations(range(10), 8):
         S, E, N, D, M, O, R, Y = perm
 
         # Check for leading zeros
-        TYPE THE CODE HERE USING IF
+        if S == 0 or M == 0:
             continue
 
         # Check the equation constraints
@@ -27,7 +27,7 @@ def solve_cryptarithmetic():
 
     return None
 
-solution = TYPE THE CODE HERE #CALL THE FUNCTION
+solution = solve_cryptarithmetic()  # Call the function
 
 if solution:
     SEND, MORE, MONEY = solution
